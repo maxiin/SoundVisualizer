@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body onload="initialize()">
+    <canvas id="circlecnv"></canvas>
+    <div id="UI" onmouseover="mouseOverUI()" > <!--</div>onmouseout="myTime = setTimeout(mouseOutUI, 3000)">-->
+        <canvas id="topcnv"></canvas>
+        <div class="topBar">
+            <audio controls id="audio"></audio>
+            <video controls height="200" id="video"></video>
+            <input id="audioFile" type="file" accept="Audio/*" capture/> 
+            <input id="videoFile" type="file" accept="Video/*" capture/> 
+        </div>
+    </div>
+    <p></p>
+    <canvas class="visualizer" id="cnv1" width="1024" height="350"></canvas>
+    <script src="script.video.js"></script>
+</body>
+</html>
